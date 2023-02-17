@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot 📷
 
-![Main image of website](https://github.com/oducoelho/E-commerce/blob/master/images/sneaker.JPG)
+![Main image of website](https://github.com/oducoelho/landing-page/blob/master/images/active-states.jpg)
 
 ### Built with ⚙
 
