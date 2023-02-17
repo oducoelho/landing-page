@@ -14,7 +14,8 @@ export const {
     colors: {
       white100: 'hsl(0, 0%, 98%)',
       gray500: 'hsl(0, 0%, 41%)',
-      black100: 'hsl(0, 0%, 8%)'
+      black100: 'hsl(0, 0%, 8%)',
+      red: '#ff0000'
     },
 
     fontSizes: {

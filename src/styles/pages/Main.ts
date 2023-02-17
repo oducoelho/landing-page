@@ -13,7 +13,7 @@ export const MainContainer = styled('div', {
 })
 
 export const ContentContainer = styled('div', {
-
+  paddingTop: '100px',
 })
 export const Title = styled('div', {
   fontSize: '$5xl',
@@ -36,9 +36,18 @@ export const Button = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',   
+
+  '&:hover': {
+    background: 'none',
+    border: '2px solid black',
+    color: '$black100',
+    cursor: 'pointer',
+
+    transition: '300ms',
+  }
 })
 export const  Options = styled('div', {
-  marginTop: '50px',
+  paddingTop: '100px',
   
   display: 'flex',
   alignItems: 'center',
