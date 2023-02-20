@@ -22,6 +22,7 @@ export const {
       ss: '1.2rem',
       sm: '1.4rem',
       md: '1.8rem',
+      '2md': '1.9rem',
       lg: '2.0rem',
       xl: '2.4rem',
       '2xl': '3.2rem',

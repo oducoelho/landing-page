@@ -1,4 +1,4 @@
-import { Button, ContentContainer, MainContainer, MobileImage,  Options, SubTitle, Title } from "../styles/pages/Main"
+import { Button, ContentContainer, MainContainer, MobileImage,  MobileSubTitle,  MobileTitle,  Options, SubTitle, Title } from "../styles/pages/Main"
 
 import DesktopImage from '../assets/image-hero-desktop.png'
 import HeroImageMobile from '../assets/image-hero-mobile.png'
@@ -12,9 +12,13 @@ export const Main = () => {
     <MainContainer>
       <ContentContainer>
         <Title>Make <p>remote work</p></Title>
+        <MobileTitle>Make remote work</MobileTitle>
         <SubTitle>
           Get your in sync, no matter your location. <p>Streamline processes, create team rituals, and</p> watch productivity soar.
         </SubTitle>
+        <MobileSubTitle>
+          Get your in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </MobileSubTitle>
         <Button>Learn more</Button>
         <Options>
           <img src={ClientItem1} alt="" />

@@ -29,7 +29,7 @@ export const Title = styled('div', {
   fontWeight: '700',
 
   '@media (max-width: 425px)': {
-    fontSize: '$xl',
+    display: 'none',
   }
   
 })
@@ -39,7 +39,7 @@ export const SubTitle = styled('div', {
   color: '$gray500',
   margin: '50px 0px',
   '@media (max-width: 425px)': {
-    textAlign: 'center',
+    display: 'none',
   }
 })
 export const Button = styled('div', {
@@ -63,7 +63,7 @@ export const Button = styled('div', {
     transition: '300ms',
   },
   '@media (max-width: 425px)': {
-    textAlign: 'center',
+    marginLeft: '110px',
   }
 })
 export const  Options = styled('div', {
@@ -73,11 +73,19 @@ export const  Options = styled('div', {
   alignItems: 'center',
   justifyContent: 'flex-start',
   gap: '40px',
+
   img: {
     width: '15%',
-  }
+  },
+  '@media (max-width: 425px)': {
+    paddingTop: '50px',
+    gap: '50px',
+    img: {
+      display: 'flex',
+    },
+  },
 })
-
+// mobile responsiveness
 export const  MobileImage = styled('div', {
   '@media (max-width: 2560px)': {
     img: {
@@ -89,5 +97,34 @@ export const  MobileImage = styled('div', {
       display: 'flex',
       width: '100%',
     },
+  },
+})
+export const MobileTitle = styled('div', {
+  fontSize: '$2xl',
+  fontWeight: '700',
+  display: 'flex',
+  justifyContent: 'center',
+
+  '@media (max-width: 2560px)': {
+    display: 'none',
+  },
+
+  '@media (max-width: 425px)': {
+    display: 'flex',
+  },
+})
+export const MobileSubTitle = styled('div', {
+  fontSize: '$2md',
+  lineHeight: 1.3,
+  color: '$gray500',
+  margin: '50px 0px',
+  textAlign: 'center',
+
+  '@media (max-width: 2560px)': {
+    display: 'none',
+  },
+
+  '@media (max-width: 425px)': {
+    display: 'flex',
   },
 })
