@@ -5,7 +5,13 @@ import { keyframes } from '@stitches/react';
 export const NavBarContainer = styled('div', {
   display: 'flex',
   justifyContent: 'space-between',
-  padding: '30px 100px'
+  padding: '30px 100px',
+
+  '@media (max-width: 425px)': {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '30px 25px',
+  },
 })
 export const Title = styled('div', {
   display: 'flex',
@@ -15,7 +21,9 @@ export const Title = styled('div', {
   span: {
     fontSize: '$3xl',
     fontWeight: '700',  
-  }
+  },
+
+  
 })
 export const Options = styled('div', {
   ul: {
@@ -30,7 +38,12 @@ export const Options = styled('div', {
         color: '$black100',
       }
     }
-  }
+  },
+
+  '@media (max-width: 425px)': {
+    width: '100%',
+    display: 'none',
+  },
 })
 export const LoginButtons = styled('div', {
   display: 'flex',
@@ -61,7 +74,12 @@ export const LoginButtons = styled('div', {
       color: '$black100',
     },
     
-  }
+  },
+
+  '@media (max-width: 425px)': {
+    width: '100%',
+    display: 'none',
+  },
 })
 
 // radix drop menu 
@@ -181,3 +199,68 @@ export const IconButton = styled('button', {
   justifyContent: 'center',
   '&:focus': { boxShadow: `0 0 0 2px black` },
 });
+
+// mobile part
+
+export const MobileIcon = styled('div', {
+  display: 'none',
+  cursor: 'pointer',
+  zIndex: 10,
+  margin: '10px 0px 0px 350px',
+  color: '$gray100',
+
+  '@media (max-width: 425px)': {
+    display: 'block',
+    position: 'fixed',
+    top: '22px',
+    cursor: 'pointer',
+  }
+})
+
+export const MobileOptions = styled('div', {
+  dispay: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alingItens: 'center',
+  position: 'absolute',
+  top: '0px',
+  right: '0px',
+  width: '60%',
+  height: '100%',
+  color: 'white',
+  backgroundColor: 'white',
+  boxShadow: "-2px 0px 30px rgba(0, 0, 0, 0.8)",
+  ul: {
+    li: {
+      margin: '50px 0px 0px 20px',
+      listStyle: 'none',
+      color: '$gray500',
+      fontSize: '$xl'
+    }
+  },
+
+  div: {
+    margin: '50px 0px 0px 20px',
+    listStyle: 'none',
+    color: 'black',
+    fontSize: '$md',
+    display: 'flex',
+    flexDirection: 'column',
+    button: {
+      padding: '15px 20px',
+      margin: '0px 20px 0px 0px',
+      borderRadius: 8,
+      background: 'none',
+      color: '$gray500',
+      border: '2px solid $gray500',
+    },
+    span: {
+      display: 'flex',
+      alignItems: 'center',
+      color: '$gray500',
+      paddingBottom: '10px',
+      justifyContent: 'center',
+      marginLeft: '-25px'
+    },
+  }
+})
