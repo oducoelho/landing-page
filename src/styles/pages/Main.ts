@@ -6,24 +6,41 @@ export const MainContainer = styled('div', {
   justifyContent: 'space-around',
 
   margin: '0px 200px',
-
   img: {
     width: '35%',
+  },
+  '@media (max-width: 425px)': {
+    display: 'flex',
+    flexDirection: 'column-reverse',
+    margin: '0px 20px',
+    img: {
+      display: 'none',
+    },
   }
 })
-
 export const ContentContainer = styled('div', {
   paddingTop: '100px',
+  '@media (max-width: 425px)': {
+    paddingTop: '20px',
+  }
 })
 export const Title = styled('div', {
   fontSize: '$5xl',
   fontWeight: '700',
+
+  '@media (max-width: 425px)': {
+    fontSize: '$xl',
+  }
+  
 })
 export const SubTitle = styled('div', {
   fontSize: '$lg',
   lineHeight: 1.3,
   color: '$gray500',
   margin: '50px 0px',
+  '@media (max-width: 425px)': {
+    textAlign: 'center',
+  }
 })
 export const Button = styled('div', {
   width: '150px',
@@ -44,6 +61,9 @@ export const Button = styled('div', {
     cursor: 'pointer',
 
     transition: '300ms',
+  },
+  '@media (max-width: 425px)': {
+    textAlign: 'center',
   }
 })
 export const  Options = styled('div', {
@@ -56,4 +76,18 @@ export const  Options = styled('div', {
   img: {
     width: '15%',
   }
+})
+
+export const  MobileImage = styled('div', {
+  '@media (max-width: 2560px)': {
+    img: {
+      display: 'none',
+    },
+  },
+  '@media (max-width: 425px)': {
+    img: {
+      display: 'flex',
+      width: '100%',
+    },
+  },
 })

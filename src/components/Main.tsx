@@ -1,6 +1,7 @@
-import { Button, ContentContainer, MainContainer, Options, SubTitle, Title } from "../styles/pages/Main"
+import { Button, ContentContainer, MainContainer, MobileImage,  Options, SubTitle, Title } from "../styles/pages/Main"
 
-import HeroImage from '../assets/image-hero-desktop.png'
+import DesktopImage from '../assets/image-hero-desktop.png'
+import HeroImageMobile from '../assets/image-hero-mobile.png'
 import ClientItem1 from '../assets/client-databiz.svg'
 import ClientItem2 from '../assets/client-audiophile.svg'
 import ClientItem3 from '../assets/client-meet.svg'
@@ -22,8 +23,10 @@ export const Main = () => {
           <img src={ClientItem4} alt="" />
         </Options>
       </ContentContainer>
-
-      <img src={HeroImage} alt="" />
-    </MainContainer>
+      <img src={DesktopImage} alt="" />
+      <MobileImage>
+        <img src={HeroImageMobile} alt="" />
+      </MobileImage>
+    </MainContainer>  
   )
 }
